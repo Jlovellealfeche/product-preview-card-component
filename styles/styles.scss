@@ -2,19 +2,34 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/*----VARIABLES----*/
+@import './variables';
 
-:root{
-    /*Primary colors*/
-    $darkcyan: hsl(158, 36%, 37%);
-    $cream: hsl(30, 38%, 92%);
-    /*Neutral colors*/
-    $verydarkblue: hsl(212, 21%, 14%);
-    $darkgrayishblue: hsl(228, 12%, 48%);
-    $white:hsl(0,0%,100%);
+
+
+/*-----Fonts-----*/
+@font-face {
+    font-family: montserrat;
+    font-style: medium;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Montserrat-Medium.ttf) format("ttf");
 }
 
+@font-face {
+    font-family: montserrat;
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Montserrat-Bold.ttf) format("ttf");
+}
 
+@font-face {
+    font-family: fraunces;
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Fraunces_72pt_Soft-Bold.ttf) format("ttf");
+}
 
 
 /*----BASE STYLES----*/
@@ -22,3 +37,18 @@
     margin: unset;
 }
 
+body {
+    background-color: $color-cream;
+    font-size: 15px;
+}
+
+h1 {
+    
+    font-family: fraunces, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $color-darkcyan;
+}
+
+
+p {
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
