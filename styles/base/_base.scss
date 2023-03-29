@@ -1,0 +1,94 @@
+
+* {
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $redhatdisplay;
+    background-color: $primarycolor-Paleblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    p {
+        font-size: 16px;
+        line-height: 1.6rem;
+        color: $neutralcolor-Desaturatedblue;
+        margin: 0 15px;
+    }
+}
+
+.bg-img {
+    background: url('/images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    //min-height: 100vh;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px hsl(228, 45%, 44%, 0.15);
+    
+}
+
+.container .banner {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    color: $neutralcolor-Darkblue;
+    margin: 20px 0;
+
+}
+
+.container .price-container {
+    margin: 30px auto 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    background-color: $neutralcolor-Verypaleblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    article {
+        display: flex;  
+    }
+
+    .music-icon {
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width: 768px){
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .container{
+        width: 50%;
+    }
+    
+    .bg-img {
+        background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50vh; //so it takes half of the screen//
+    }
+}
