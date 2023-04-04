@@ -127,6 +127,11 @@ body {
     color: $neutralcolor-Very-dark-blue;
 }
 
+.product_price {
+    font-size: 2rem;
+    font-family: $fraunces;
+    color: $primarycolor-Dark-cyan;
+}
 
 
 
@@ -135,8 +140,20 @@ body {
 .price_container {
     display: flex;
     gap: 1rem;
+    align-items: center;
     flex-wrap: wrap; /*this is to prevent overflow when the screen gets too narrow */
+
 }
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
 
 
 
