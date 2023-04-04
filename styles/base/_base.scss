@@ -159,20 +159,16 @@ body {
 
 
 
-// @media (min-width: 768px){
+@media (min-width: 600px) {
 
-//     main {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     } 
+article.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-//     .container{
-//         width: 50%;
-//     }
-    
-//     .bg-img {
-//         background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
-//         height: 50vh; //so it takes half of the screen//
-//     }
-// }
+    .product_content {
+        padding: var(--content-padding);
+        display: grid;
+        gap: var(--content-spacing)
+    }
+}

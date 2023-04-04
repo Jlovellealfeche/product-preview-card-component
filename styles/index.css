@@ -150,6 +150,17 @@ body p {
   width: 1px;
 }
 
+@media (min-width: 600px) {
+  article.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .product_content {
+    padding: var(--content-padding);
+    display: grid;
+    gap: var(--content-spacing);
+  }
+}
 .btn {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
