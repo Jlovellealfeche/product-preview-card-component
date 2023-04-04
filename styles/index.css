@@ -105,6 +105,7 @@ body p {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 2px 2px 2px hsla(228, 45%, 44%, 0.15);
+  max-width: 600px;
 }
 
 .product_content {
@@ -152,6 +153,7 @@ body p {
 
 @media (min-width: 600px) {
   article.product {
+    --content-padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -168,7 +170,7 @@ body p {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   border: 0;
-  padding: 0.75em 1.5em;
+  padding: 0.55em 1.5em;
   cursor: pointer;
   transition: all 0.2 ease-in-out;
   background-color: hsl(158, 36%, 37%);
