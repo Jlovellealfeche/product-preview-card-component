@@ -6,72 +6,35 @@
   box-sizing: border-box;
 }
 
+img {
+  min-width: 100%;
+}
+
 body {
   font-family: "Fraunces", serif;
   background-color: hsl(30, 38%, 92%);
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
 body p {
-  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   line-height: 1.6rem;
-  color: hsl(224, 23%, 55%);
-  margin: 0 15px;
+  color: hsl(228, 12%, 48%);
 }
 
-.container {
-  background-color: hsl(30, 38%, 92%);
+.product {
+  background-color: hsl(0, 0%, 100%);
+  min-height: 100vh;
   margin: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px hsla(228, 45%, 44%, 0.15);
 }
 
-.container .banner {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
-
-h1 {
-  color: hsl(223, 47%, 23%);
-  margin: 20px 0;
-}
-
-.container .price-container {
-  margin: 30px auto 20px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 90%;
-  background-color: hsl(225, 100%, 98%);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.container .price-container article {
-  display: flex;
-}
-.container .price-container .music-icon {
-  margin-right: 20px;
-}
-
-@media (min-width: 768px) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .container {
-    width: 50%;
-  }
-  .bg-img {
-    background: url("/images/pattern-background-desktop.svg") no-repeat center/cover;
-    height: 50vh;
-  }
-}
 .btn {
   font-family: "Fraunces", serif;
   font-size: 16px;

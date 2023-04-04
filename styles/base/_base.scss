@@ -5,81 +5,62 @@
     box-sizing: border-box;
 }
 
+img {
+    min-width: 100%;
+}
+
 body {
     font-family: $fraunces;
     background-color: $primarycolor-Cream;
-    text-align: center;
+    //text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 
     p {
-        font-size: 16px;
+        font-family: $montserrat;
+        font-size: 14px;
         line-height: 1.6rem;
-        color: $neutralcolor-Desaturatedblue;
-        margin: 0 15px;
+        color: $neutralcolor-Darkgrayish-blue;
+        
     }
 }
 
 
 
-.container {
+.product {
     background-color:$neutralcolor-White;
     min-height: 100vh;
     margin: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px hsl(228, 45%, 44%, 0.15);
+}
+
+.img-container {
     
 }
 
-.container .banner {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-}
-
-h1 {
-    color: $neutralcolor-Darkblue;
-    margin: 20px 0;
-
-}
-
-.container .price-container {
-    margin: 30px auto 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 90%;
-    background-color: $neutralcolor-Verypaleblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    article {
-        display: flex;  
-    }
-
-    .music-icon {
-        margin-right: 20px;
-    }
-}
 
 
-@media (min-width: 768px){
 
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
 
-    .container{
-        width: 50%;
-    }
+// @media (min-width: 768px){
+
+//     main {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     } 
+
+//     .container{
+//         width: 50%;
+//     }
     
-    .bg-img {
-        background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
-        height: 50vh; //so it takes half of the screen//
-    }
-}
+//     .bg-img {
+//         background: url('/images/pattern-background-desktop.svg') no-repeat center/cover;
+//         height: 50vh; //so it takes half of the screen//
+//     }
+// }
