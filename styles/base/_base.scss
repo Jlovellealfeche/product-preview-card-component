@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: $redhatdisplay;
-    background-color: $primarycolor-Paleblue;
+    font-family: $fraunces;
+    background-color: $primarycolor-Cream;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -23,20 +23,11 @@ body {
     }
 }
 
-.bg-img {
-    background: url('/images/pattern-background-mobile.svg') no-repeat center/cover;
-    height: 400px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+
 
 .container {
-    background-color: hsl(0, 0%, 100%);
-    //min-height: 100vh;
+    background-color:$neutralcolor-White;
+    min-height: 100vh;
     margin: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
